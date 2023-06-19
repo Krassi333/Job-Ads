@@ -52,4 +52,10 @@ router.post('/register',
         }
     });
 
+router.get('/login', (req, res) => {
+    res.render('login', {
+        title: "Login Page"
+    })
+});
+
 module.exports = router;
