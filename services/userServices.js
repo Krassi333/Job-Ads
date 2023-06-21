@@ -53,6 +53,11 @@ function createSesion({ _id, username }) {
         username
     }
 
+    const token = jwt.sign(payload, secret);
+
+    return token;
+}
+
 module.exports = {
     register,
     login,
