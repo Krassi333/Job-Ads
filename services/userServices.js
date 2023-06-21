@@ -39,6 +39,10 @@ async function login(username, password) {
     return token;
 }
 
+async function logout() {
+
+}
+
 module.exports = {
     register,
     login,
