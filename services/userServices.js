@@ -47,6 +47,12 @@ function verifyToken(token) {
     return jwt.verify(token, secret);
 }
 
+function createSesion({ _id, username }) {
+    const payload = {
+        _id,
+        username
+    }
+
 module.exports = {
     register,
     login,
